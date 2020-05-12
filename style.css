@@ -1,0 +1,295 @@
+html{
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  /* background-color: black; */
+  margin: 0;
+  font-family: 'Caladea', serif;
+  /* height: 300vh; */
+}
+
+.disableSelection{
+  user-select: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+
+#title_the{
+  font-size: 30px;
+}
+
+#title_final{
+  font-size: 60px;
+  letter-spacing: 0.4em;
+}
+
+#title_blessing{
+  font-size: 60px;
+  letter-spacing: 0.4em;
+}
+
+#infoButton{
+  font-size: 50px;
+  color: #4F726C;
+  background-color: transparent;
+  border: transparent;
+  position: fixed;
+  bottom: 3vh;
+  right: 5.4vw;
+  display: none;
+  outline: none;
+  text-decoration: none;
+}
+
+#infoButton:hover{
+  cursor: pointer;
+  color: white;
+  font-size: 51px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: black;
+  color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-paragraph::selection{
+  background-color: #4F726C;
+}
+
+/* The Close Button */
+.close {
+  color: #4F726C;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 51px;
+}
+
+.description{
+  color: white;
+  background-color: #4F726C;
+  padding: 1.6em;
+  opacity: 90%;
+  line-height: 1.2em;
+}
+
+.description-text::selection{
+  background-color: black;
+}
+
+@keyframes aniDescription1 {
+  from {
+    opacity: 0;
+    top: 75vh;
+  }
+  to {
+    opacity: 90%;
+    top: 60vh;
+  }
+}
+
+#description1{
+  position: absolute;
+  top: 60vh;
+  left: 87vw;
+  display: none;
+}
+
+@keyframes aniDescription2_1 {
+  from {
+    opacity: 0;
+    top: 0vh;
+  }
+  to {
+    opacity: 90%;
+    top: 25vh;
+  }
+}
+
+#description2_1{
+  position: fixed;
+  top: 25vh;
+  left: 84vw;
+  display: none;
+}
+
+@keyframes aniDescription2_2 {
+  0% {opacity: 0;}
+  70% {opacity: 0;}
+  100% {opacity: 90%;}
+}
+
+#description2_2{
+  position: fixed;
+  top: 55vh;
+  left: 84vw;
+  display: none;
+}
+
+@keyframes aniDescription3_1 {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 90%;}
+}
+
+#description3_1{
+  position: fixed;
+  top: 0;
+  left: 89.8vw;
+  display: none;
+}
+
+@keyframes aniDescription3_2 {
+  0% {opacity: 0;}
+  99% {opacity: 0;}
+  100% {opacity: 90%;}
+}
+
+#description3_2{
+  position: fixed;
+  top: 40vh;
+  left: 89.8vw;
+  display: none;
+}
+
+@keyframes aniDescription3_3 {
+  0% {
+    opacity: 0;
+    top: 65vh;
+  }
+  70% {
+    opacity: 0;
+    top: 65vh;
+  }
+  100% {
+    opacity: 90%;
+    top: 55vh;
+  }
+}
+
+#description3_3{
+  position: fixed;
+  top: 55vh;
+  left: 84vw;
+  display: none;
+}
+
+#description3_4{
+  position: fixed;
+  top: 43vh;
+  left: 35vw;
+  display: none;
+  text-align: center;
+}
+
+.brush .selection{
+  fill: black;
+}
+
+.bg{
+  width: 100vw;
+  height: 50vh;
+}
+
+#container{
+  width: 100vw;
+  height: 300vh;
+  position: absolute;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+.downArrow{
+  position: fixed;
+  bottom: 2vh;
+  right: 5vw;
+  color: #aaaaaa;
+  font-size: 50px;
+}
+
+.upArrow{
+  position: fixed;
+  bottom: 7.8vh;
+  right: 5vw;
+  color: #aaaaaa;
+  font-size: 50px;
+}
+
+.downArrow:hover{
+  color: white;
+  cursor: pointer;
+  font-size: 51px;
+}
+
+.upArrow:hover{
+  color: white;
+  cursor: pointer;
+  font-size: 51px;
+}
+
+#section_link2_1{
+  display: none;
+}
+
+#section_link3_2{
+  display: none;
+}
+
+#section_link2_3{
+  display: none;
+}
+
+#img_mic{
+  position: absolute;
+  top: 0;
+  left: 20vw;
+  width: 500px;
+  height: 120vh;
+  /* -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
+}
+
+#full_statement tspan::selection{
+  background-color: white;
+}
+
+.enteringWord::selection{
+  background-color: #4F726C;
+  fill: white;
+}
+
+.bedText::selection{
+  background-color: black;
+}
